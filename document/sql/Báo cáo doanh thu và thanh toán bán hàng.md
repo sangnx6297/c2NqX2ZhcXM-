@@ -1,4 +1,4 @@
-# Query:
+# Query: Báo cáo doanh thu và thanh toán bán hàng
 ```SQL
 WITH erp_warehouse AS ( SELECT `code`, `name` FROM scj_mcr_prod.whtb_place ) SELECT
 FROM_UNIXTIME( oi.created_at, '%d-%m-%Y' ) AS 'Ngày', 
