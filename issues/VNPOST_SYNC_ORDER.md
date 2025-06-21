@@ -14,7 +14,10 @@
 ```
 + **Hướng xử lý**:
 ```
-1. Kiểm tra dữ liệu (1) có khớp với dữ liệu (2) - không khớp điều chỉnh dữ liệu (1).
-2. Kiểm tra dữ liệu (2) có khớp với dữ liệu (3) - Không khớp điều chỉnh dữ liệu (2) - Kiểm tra, điều dữ liệu (1).
-3. Cập nhật database cho các dữ liệu đồng nhất.
+1. Dùng mã TO tìm kiếm trên màn hình danh sách đơn hàng để lấy đơn
+2. Lấy id đơn hàng tìm trong bản `erp_order_index` tìm cột `ward` hoặc `district` để lấy mã kiểm tra
+3. Dùng mã vừa tìm được tìm trong `erp_ward` để lấy external code (1)
+4. Kiểm tra (1) với dữ liệu (2) - không khớp điều chỉnh dữ liệu (1).
+5. Kiểm tra dữ liệu (2) có khớp với dữ liệu (3) - Không khớp điều chỉnh dữ liệu (2) - Kiểm tra, điều dữ liệu (1).
+6. Cập nhật database cho các dữ liệu đồng nhất.
 ```
